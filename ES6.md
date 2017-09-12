@@ -45,3 +45,21 @@ const [first, ...rest] = [1,2,3,4,5]
 [...'hello']  
 // [ "h", "e", "l", "l", "o" ] 
 ```
+
+## 函数的扩展
+
+1. 可以给参数赋默认值，若没有传参就使默认值
+2. 优点:简洁，便于阅读，便于维护和修改
+3. 已经定义了的参数变量不需要再声明
+4. 与解构赋值默认值结合使用
+
+```js
+function fetch(url, { body = '', method = 'GET', headers = {} })
+{
+console.log(method);
+} f
+etch('http://example.com', {})
+// "GET"
+fetch('http://example.com')
+// 报错
+```
