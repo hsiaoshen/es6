@@ -24,3 +24,18 @@ var args = Array.from(arguments);
 ```js
 console.log(...[1, 2, 3])  // 1 2 3
 ```
+4. 数组的合并
+
+```js
+// ES5  
+[1, 2].concat(more)  
+// ES6  
+[1, 2, ...more] 
+```
+5. 与rest结合进行数组生成
+
+```js
+const [first, ...rest] = [1,2,3,4,5]
+// first = 1
+// rest = [2,3,4,5]
+```
