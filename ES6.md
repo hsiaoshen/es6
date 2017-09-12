@@ -88,3 +88,24 @@ birth,
 hello() { console.log('我的名字是', this.name); }
 };
 ```
+3. 模块导出的简洁表示
+
+```js
+var ms = {};
+function getItem (key) {
+return key in ms ? ms[key] : null;
+} f
+unction setItem (key, value) {
+ms[key] = value;
+} f
+unction clear () {
+ms = {};
+} m
+odule.exports = { getItem, setItem, clear };
+// 等同于
+module.exports = {
+getItem: getItem,
+setItem: setItem,
+clear: clear
+};
+```
