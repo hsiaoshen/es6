@@ -63,3 +63,28 @@ etch('http://example.com', {})
 fetch('http://example.com')
 // 报错
 ```
+
+## 对象的扩展
+
+1. 属性的简洁表示
+
+```js
+var foo = 'bar';
+var baz = {foo};
+baz // {foo: "bar"}
+// 等同于
+var baz = {foo: foo};
+```
+
+2. 方法的简洁表示
+
+```js
+var birth = '2000/01/01';
+var Person = {
+name: '张三',
+//等同于birth: birth
+birth,
+// 等同于hello: function ()...
+hello() { console.log('我的名字是', this.name); }
+};
+```
