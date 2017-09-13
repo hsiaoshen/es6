@@ -78,6 +78,7 @@ obj.removeEventListener('事件名'，'事件处理函数'，'布尔值') // 移
 注意:
 1. 事件名前有on
 2. 在全局作用域中进行事件处理程序，this为window
+3. 虽然和DOM2一样为一个元素添加多个事件处理程序，不同的是，DOM2是按添加顺序执行的，而它相反
 
 ```js
 obj.attachEvent("on事件名", "事件处理函数")
