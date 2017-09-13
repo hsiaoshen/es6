@@ -31,6 +31,31 @@ str = JSON.stringify(obj);
 
 扩展标记语言 (Extensible Markup Language, XML) ，用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。是标准通用标记语言 (SGML) 的子集，非常适合 Web 传输。XML 提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据。
 
+### 格式
+
+使用标签式写法
+
+```js
+var xmlStr = "<rss version='2.0'>" +
+    "<student><name>lisi</name><age>10</age><hobby><one>learn</one><one>sleep</one></hobby><contact>" +
+    "<f>3878376873</f><m>98948798479</m></contact><human>true</human></student></rss>";
+```
+### 解析
+
+#### $.parseXML（）
+
+```js
+    var doc = $.parseXML(xmlStr);
+    console.log(doc);//DOM对象
+```
+
+#### 使用DOMParser解析
+
+```js
+var parser = new DOMParser();
+    doc = parser.parseFromString(xmlStr2, "application/xml");
+    console.log(doc);
+```
 
 ## json和xml对比
 
