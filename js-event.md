@@ -166,3 +166,15 @@ cancelable 属性设置为 true 的事件
 event.preventDefault()
 
 IE:event.returnValue = false
+
+## DOM3级事件
+
+### 焦点事件
+
+焦点事件 | 是否冒泡 | 说明
+---------|------|-----
+blur | no | 在元素失去焦点时触发，所有浏览器都支持
+focus | no | 在元素获得焦点时触发，所有浏览器都支持
+focusin | yes | 在元素获取焦点时触发，
+focusout | yes | 在元素失去焦点时触发，
+
