@@ -67,7 +67,7 @@ onreset | 重置表单时
 
 ```js
 obj.addEventListener('事件名'，'事件处理函数'，'布尔值')
-obj.removeEventListener('事件名'，'事件处理函数'，'布尔值')
+obj.removeEventListener('事件名'，'事件处理函数'，'布尔值') // 移除的参数要与添加时一致，若是事件处理函数为匿名，那么就无法移除了
 //true：捕获
 //false：冒泡
 ```
