@@ -143,7 +143,14 @@ EventUtil.removeHandler(btn, "click", handler);
 9. trusted：为 true 表示事件是浏览器生成的。为 false 表示 事 件 是 由 开 发 人 员 通 过 JavaScript 创 建 的
 10. type：事件发生类型
 
-### IE中的event
+### IE中的event对象
+
+属性和方法 | 类型 | 读写 | 说明
+---------|------|-----|-----
+cancelBubble | Boolean | 读/写 | 默认值为 false ,但将其设置为 true 就可以取消事件冒泡
+returnValue | Boolean | 读/写 | 默认值为 true ,但将其设置为 false 就可以取消事件默认行为
+srcElement | Element | 读 | 事件目标
+type | String | 读| 事件类型
 
 ### 阻止默认行为和冒泡/捕获
 
