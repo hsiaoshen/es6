@@ -185,7 +185,7 @@ focusout | yes | 在元素失去焦点时触发，
 clientX/clientY |  ..  | 客户区的坐标，即鼠标位置到浏览器的可视窗口的距离 | no
 screenX/screenY |  ..  | 屏幕区的坐标，即鼠标位置到屏幕左边缘和上边缘的距离 | no
 pageX/pageY |  = clientX/Y + scroll的距离  | 页面的坐标，即鼠标位置到页面上边和左边的距离 | yes
-offsetX/offsetY |  ..  | 即鼠标位置到自身元素左上角的X，Y距离 | no
-
+offsetX/offsetY |  ..  | 即鼠标位置到触发事件对象的X，Y距离 | no
+x/y | ... |  设置或获取鼠标指针位置相对于父文档的 x/y 像素坐标。|
 
 
