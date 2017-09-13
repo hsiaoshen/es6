@@ -12,7 +12,7 @@ js中事件的三要素:事件源，事件，事件处理程序三部分组成
 <button onclick="alert('hello');">按钮</button>
 ```
 
-## DOM0级
+### DOM0级
 
 把函数赋值给一个事件处理程序
 
@@ -20,7 +20,7 @@ js中事件的三要素:事件源，事件，事件处理程序三部分组成
 obj.onclick = function(event){ ....};
 ```
 
-### 常用的事件
+#### 常用的事件
 
 事件名 | 事件说明
 ------|--------
@@ -35,11 +35,17 @@ onunload| 网页关闭时
 onsubmit| 表单提交
 onreset | 重置表单时
 
-## DOM2级
+### DOM2级
 
 ```js
 obj.addEventListener('事件名'，'事件处理函数'，'布尔值')
 obj.removeEventListener('事件名'，'事件处理函数'，'布尔值')
 //true：捕获
 //false：冒泡
+```
+### IE处理
+
+```js
+obj.attachEvent("on事件名", "事件处理函数")
+obj.detachEvent("on事件名", "事件处理函数")
 ```
