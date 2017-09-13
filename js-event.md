@@ -115,3 +115,13 @@ element["on" + type] = null;
 }
 };
 ```
+```js
+//使用
+var btn = document.getElementById("myBtn");
+var handler = function(){
+alert("Clicked");
+};
+EventUtil.addHandler(btn, "click", handler);
+//这里省略了其他代码
+EventUtil.removeHandler(btn, "click", handler);
+```
