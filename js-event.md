@@ -75,7 +75,9 @@ obj.removeEventListener('事件名'，'事件处理函数'，'布尔值') // 移
 
 由于 IE8 及更早版本只支持事件冒泡,所以通过attachEvent() 添加的事件处理程序都会被添加到冒泡阶段。
 
-注意:事件名前有on
+注意:
+1. 事件名前有on
+2. 在全局作用域中进行事件处理程序，this为window
 
 ```js
 obj.attachEvent("on事件名", "事件处理函数")
