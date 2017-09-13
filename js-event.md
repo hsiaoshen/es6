@@ -84,3 +84,34 @@ obj.removeEventListener('事件名'，'事件处理函数'，'布尔值') // 移
 obj.attachEvent("on事件名", "事件处理函数")
 obj.detachEvent("on事件名", "事件处理函数")
 ```
+
+### 解决事件兼容性问题
+
+重点在事件冒泡
+
+EventUtil 的对象的方法可以处理浏览器的差异
+
+#### 方法
+
+```js
+var EventUtil = {
+addHandler: function(element, type, handler){
+if (element.addEventListener){
+element.addEventListener(type, handler, false);
+} else if (element.attachEvent){
+element.attachEvent("on" + type, handler);
+} else {
+element["on" + type] = handler;
+}
+},
+removeHandler: function(element, type, handler){
+if (element.removeEventListener){
+element.removeEventListener(type, handler, false);
+} else if (element.detachEvent){
+element.detachEvent("on" + type, handler);
+} else {
+element["on" + type] = null;
+}
+}
+};
+```
