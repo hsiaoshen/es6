@@ -34,3 +34,12 @@ onload| 文档加载事件
 onunload| 网页关闭时
 onsubmit| 表单提交
 onreset | 重置表单时
+
+## DOM2级
+
+```js
+obj.addEventListener('事件名'，'事件处理函数'，'布尔值')
+obj.removeEventListener('事件名'，'事件处理函数'，'布尔值')
+//true：捕获
+//false：冒泡
+```
