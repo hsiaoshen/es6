@@ -131,10 +131,15 @@ EventUtil.removeHandler(btn, "click", handler);
 
 ## 事件对象 event
 
-### 每个事件必有属性（可读属性）
+### 每个事件必有属性/方法（可读）
 
 1. bubbles:是否冒泡，布尔值
 2. cancelable:是否可以取消默认行为,布尔值
 3. defaultPrevented:为 true表示已经调用preventDefault(),布尔值
 4. detail:与事件相关法细节信息,int类型
 5. eventPhase:调用事件处理程序的阶段:1表示捕获阶段,2表示“处于目标”,3表示冒泡阶段,int类型
+6. stopImmediatePropagation():取消事件的进一步捕获或冒泡,同时阻止任何事件处理程序被调用
+7. stopPropagation()：取消事件的进一步捕获或冒泡。如果 bubbles为 true ,则可以使用这个方法
+8. target：事件源
+9. trusted：为 true 表示事件是浏览器生成的。为 false 表示 事 件 是 由 开 发 人 员 通 过 JavaScript 创 建 的
+10. type：事件发生类型
