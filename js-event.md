@@ -157,7 +157,7 @@ type | String | 读| 事件类型
 #### 阻止冒泡/捕获
 event.stopPropagation()
 
-IE:event.cancelBubble = true
+IE:event.cancelBubble = true(IE不支持事件捕获，所以只是取消冒泡)
 
 #### 阻止默认行为
 
