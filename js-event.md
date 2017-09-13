@@ -18,7 +18,6 @@ js中事件的三要素:事件源，事件，事件处理程序三部分组成
 
 具体实现:IE9、Firefox、Chrome 和 Safari 则将事件一直泡会跳过 <html> 元素(从 <body> 直接跳到 document )冒泡到 window 对象
 
-#### 阻止事件冒泡
 
 ### DOM事件流
 
@@ -131,7 +130,7 @@ EventUtil.removeHandler(btn, "click", handler);
 
 ## 事件对象 event
 
-### 每个事件必有属性/方法（可读）
+### 必有属性/方法（可读）
 
 1. bubbles:是否冒泡，布尔值
 2. cancelable:是否可以取消默认行为,布尔值
@@ -143,3 +142,16 @@ EventUtil.removeHandler(btn, "click", handler);
 8. target：事件源
 9. trusted：为 true 表示事件是浏览器生成的。为 false 表示 事 件 是 由 开 发 人 员 通 过 JavaScript 创 建 的
 10. type：事件发生类型
+
+### IE中的event
+
+### 阻止默认行为和冒泡/捕获
+
+#### 阻止冒泡/捕获
+event.stopPropagation()
+
+#### 阻止默认行为
+
+cancelable 属性设置为 true 的事件
+
+event.preventDefault()
