@@ -157,8 +157,12 @@ type | String | 读| 事件类型
 #### 阻止冒泡/捕获
 event.stopPropagation()
 
+IE:event.cancelBubble = true
+
 #### 阻止默认行为
 
 cancelable 属性设置为 true 的事件
 
 event.preventDefault()
+
+IE:event.returnValue = false
