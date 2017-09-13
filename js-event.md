@@ -128,3 +128,13 @@ EventUtil.addHandler(btn, "click", handler);
 //这里省略了其他代码
 EventUtil.removeHandler(btn, "click", handler);
 ```
+
+## 事件对象 event
+
+### 每个事件必有属性（可读属性）
+
+1. bubbles:是否冒泡，布尔值
+2. cancelable:是否可以取消默认行为,布尔值
+3. defaultPrevented:为 true表示已经调用preventDefault(),布尔值
+4. detail:与事件相关法细节信息,int类型
+5. eventPhase:调用事件处理程序的阶段:1表示捕获阶段,2表示“处于目标”,3表示冒泡阶段,int类型
