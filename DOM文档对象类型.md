@@ -2,7 +2,19 @@
 
 整个文档全都由节点组成，包括元素(HTML标签)节点，文字节点，属性节点。
 
+
+## document
+
 文档的根节点:文档节点（document）
+
+### document对象属性
+
+1. document.documentElement:该属性指向html元素
+2. document.body:该属性指向body元素
+3. document.title:文档标题
+4. document.URL:获取文档的完整的url
+5. document.domain:取得域名
+6. document.refferrer:取得来源页面的url
 
 ## 节点类型(nodetype属性判断)
 
