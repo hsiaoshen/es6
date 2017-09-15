@@ -32,5 +32,13 @@ var parent = obj.parentNode
 3. obj.childNodes  --> 所有包括文本节点（空格和换行）在内的子节点
 4. obj.children --> 仅包含标签，所有浏览器都使用 
 
+## 创建元素
 
+var obj = document.createElement()
 
+应用场景:对于不支持H5新标签的的，可以使用这个创建标签，然后赋予样式即可
+
+## 添加元素
+
+1. obj.appendChild(node) --> 在元素内部的末尾添加元素
+2. obj.insertBefore(newnode, refnode), 将newnode节点插入到obj节点的refnode之前。若refnode为null,等同于appendChild
