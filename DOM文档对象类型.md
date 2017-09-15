@@ -6,7 +6,7 @@
 
 ## 节点类型(nodetype属性判断)
 
-1. Node.ELEMENT_NODE (1);
+1. Node.ELEMENT_NODE (1);  //nodeName为标签名，nodeValue为null
 2. Node.ATTRIBUTE_NODE (2);
 3. Node.TEXT_NODE (3);
 4. Node.CDATA_SECTION_NODE (4);
