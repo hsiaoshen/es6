@@ -63,6 +63,10 @@ var obj = document.createElement()
 
 obj.removeChild(b)  --> 返回被删除的节点
 
+## 替换节点
+
+obj.replaceChild(newNode,oldNode) 
+
 ## 属性节点操作
 
 1. node.getAttribute('class') -->获得class属性值
