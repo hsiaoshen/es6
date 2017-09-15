@@ -14,6 +14,13 @@
 3. document.title:文档标题
 4. document.URL:获取文档的完整的url，读
 5. document.domain:取得域名,读写
+***
+用途:解决页面中子域之间的跨域通信问题
+
+方法: 设置各自的domain一致
+
+注意: 若是设置了document.domian，就不能再设置回原来的域名了
+***
 6. document.referrer:取得来源页面的url，读
 
 ## 节点类型(nodetype属性判断)
