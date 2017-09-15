@@ -106,3 +106,31 @@ node.cloneNode(布尔值)
 布尔值:
 1. true:深度拷贝，拷贝所有子节点。
 2. false:浅拷贝，只拷贝节点本身
+
+## 文本节点 
+
+### 特点
+1. nodeType 的值为 3;
+2. nodeName 的值为 "#text" ;
+3. nodeValue 的值为节点所包含的文本;
+4. parentNode 是一个 Element ;
+
+### 操作
+
+#### 创建文本节点
+
+document.createTextNode() -- 参数为要插入节点的文本
+
+可以为同一个元素节点添加多个文本节点，但是如果两个文本节点是相邻的同胞节点,那么这两个节点中的文本就会连起来显示,中间不会有空格。
+
+
+## 使用DOM操作来添加动态js脚本
+
+```js
+function loadScript(url){
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = url;
+document.body.appendChild(script);  //一添加就会下载，所以封装利用函数调用
+}
+```
