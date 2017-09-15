@@ -22,6 +22,7 @@
 注意: 若是设置了document.domian，就不能再设置回原来的域名了
 ***
 6. document.referrer:取得来源页面的url，读
+7. hasFeature()：可以检测DOM功能是否该版本号支持，2个参数为功能和版本号
 
 ## 节点类型(nodetype属性判断)
 
@@ -92,6 +93,7 @@ obj.replaceChild(newNode,oldNode)
 2. node.setAttribute('class','one')  /  node.className = 'one'(兼容写法)    --> 设置属性
 3. removeAttribute("属性")   /  node.className=''(兼容写法)  //移除属性
 
+注意:自定义的属性不会被getAttribute获取到
 
 ## 修改多个CSS属性
 
