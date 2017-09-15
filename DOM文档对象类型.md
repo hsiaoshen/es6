@@ -14,7 +14,7 @@
 3. document.title:文档标题
 4. document.URL:获取文档的完整的url
 5. document.domain:取得域名
-6. document.refferrer:取得来源页面的url
+6. document.referrer:取得来源页面的url
 
 ## 节点类型(nodetype属性判断)
 
