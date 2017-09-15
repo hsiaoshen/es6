@@ -42,3 +42,11 @@ var obj = document.createElement()
 
 1. obj.appendChild(node) --> 在元素内部的末尾添加元素
 2. obj.insertBefore(newnode, refnode), 将newnode节点插入到obj节点的refnode之前。若refnode为null,等同于appendChild
+
+## 节点属性操作
+
+1. node.getAttribute('class') //获得class属性值
+2. node.setAttribute('class','one')  /  node.className = 'one'     // 设置属性
+
+
+
