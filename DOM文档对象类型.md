@@ -2,6 +2,19 @@
 
 整个文档全都由节点组成，包括元素(HTML标签)节点，文字节点，属性节点。
 
+文档的根节点:文档节点（document）
+
+## 节点类型
+
+1. Node.ELEMENT_NODE (1);
+2. Node.ATTRIBUTE_NODE (2);
+3. Node.TEXT_NODE (3);
+4. Node.CDATA_SECTION_NODE (4);
+5. Node.ENTITY_REFERENCE_NODE (5);
+6. Node.ENTITY_NODE (6);
+7. Node.PROCESSING_INSTRUCTION_NODE (7);
+8. Node.COMMENT_NODE (8);
+
 ## 获取节点
 
 ### 获取对应元素的节点
@@ -47,7 +60,7 @@ var obj = document.createElement()
 
 obj.removeChild(b)  --> 返回被删除的节点
 
-## 节点属性操作
+## 属性节点操作
 
 1. node.getAttribute('class') -->获得class属性值
 2. node.setAttribute('class','one')  /  node.className = 'one'(兼容写法)    --> 设置属性
