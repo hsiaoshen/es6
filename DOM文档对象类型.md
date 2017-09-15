@@ -4,7 +4,7 @@
 
 文档的根节点:文档节点（document）
 
-## 节点类型
+## 节点类型(nodetype属性判断)
 
 1. Node.ELEMENT_NODE (1);
 2. Node.ATTRIBUTE_NODE (2);
