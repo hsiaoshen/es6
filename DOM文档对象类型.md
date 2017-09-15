@@ -43,10 +43,25 @@ var obj = document.createElement()
 1. obj.appendChild(node) --> 在元素内部的末尾添加元素
 2. obj.insertBefore(newnode, refnode), 将newnode节点插入到obj节点的refnode之前。若refnode为null,等同于appendChild
 
+## 删除子元素
+
+obj.removeChild(b)  --> 返回被删除的节点
+
 ## 节点属性操作
 
-1. node.getAttribute('class') //获得class属性值
-2. node.setAttribute('class','one')  /  node.className = 'one'     // 设置属性
+1. node.getAttribute('class') -->获得class属性值
+2. node.setAttribute('class','one')  /  node.className = 'one'(兼容写法)    --> 设置属性
+3. removeAttribute("属性")   /  node.className=''(兼容写法)  //移除属性
 
 
+## 修改多个CSS属性
 
+node.style.cssText = 'width:100px;height:100px;'
+
+## 克隆节点
+
+node.cloneNode(布尔值)
+
+布尔值:
+1. true:深度拷贝，拷贝所有子节点。
+2. false:浅拷贝，只拷贝节点本身
