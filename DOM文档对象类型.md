@@ -47,7 +47,7 @@ var parent = obj.parentNode
 2. obj.lastElementChild || obj.lastChild
 3. obj.childNodes  --> 所有包括文本节点（空格和换行）在内的子节点
 4. obj.children --> 仅包含标签，所有浏览器都使用 
-
+5. obj.hasChildNodes() --> 判断是否包含一或多个子节点，若是返回true
 ## 创建元素
 
 var obj = document.createElement()
