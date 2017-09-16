@@ -28,8 +28,8 @@ str.replace(pattern,newstr)
 
 1. str.match(str)  --> 会先把str转换为RegExp对象,再匹配
 2. str.match(pattern)
-    1. 有g:返回在字符串中查找到的所有匹配项数组
-    2. 无g:返回只查找到的第一个匹配，以及index,input
+    1. 有g:返回在字符串中查找到的所有匹配项数组
+    2. 无g:返回只查找到的第一个匹配，以及index,input
 
 
 ## 匹配模式
