@@ -111,6 +111,12 @@ clear: clear
 ```
 4. 可以把表达式作为键，必须写在方括号内；也可以用字符串作键
 
+### 对象常用方法
+
+1. Object.keys(obj) --> 返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键名。不包含symol属性
+1. Object.values(obj) --> 返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键值。不包含symol属性，若是使用create添加，默认是不能被遍历到的，但是键名的属性描述对象enumerable改成true就可以了。若是参数是字符串，那么会返回字符组成的数组
+1. Object.entries(obj)：返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键值对数组。如果原对象的属性名是一个 Symbol 值，该属性会被忽略。还可以把一个对象转换为真正的MAP结构
+
 ## Proxy 
 
 使用new Proxy(target, handler) -- > 外界对该对象的访问都必须经过这层拦截，
